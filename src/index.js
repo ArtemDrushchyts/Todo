@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import SearchPanel from "./components/search-panel";
 import AppHeader from "./components/app-header";
 import TodoList from "./components/todo-list";
+import './index.css';
 
 const App = () => {
 
@@ -13,7 +14,7 @@ const App = () => {
     ];
 
     return (
-        <div>
+        <div className='todo-app'>
             <AppHeader/>
             <SearchPanel/>
             <TodoList todos={todoData}/>
